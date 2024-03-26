@@ -1,8 +1,8 @@
-.svgElement, .logo {
+.icons, .logo {
     display: inline-block;
 }
 
-.svgElement:hover {
+.icons:hover {
     cursor: pointer;
 }
 
@@ -19,21 +19,23 @@
     }
 }
 
-
-.fadeIn {
-    animation: fadeInAnimation 0.5s forwards;
+.linesContainer {
+    margin-top: 0.5rem;
 }
 
-.fadeOut {
-    animation: fadeOutAnimation 0.5s forwards;
+.linesContainer div {
+    border-bottom: 1px solid #73ff00;
+    width: 30px;
+    height: 10px;
+    margin-left: 1rem;
 }
 
-@keyframes fadeInAnimation {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.crossLineOne {
+    transform: rotate(0.14turn) translate(10.5px, 55%);
+    transition: transform 1s;
 }
 
-@keyframes fadeOutAnimation {
-    from { opacity: 1; }
-    to { opacity: 0; }
+.crossLineTwo {
+    transform: rotate(-0.14turn) translate(-5px, -40%);
+    transition: transform 1s;
 }
