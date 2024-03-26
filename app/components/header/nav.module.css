@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: xx-small;
+    font-weight: 200;
+	padding: 0;
+    width: 10%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: none;
+    }
+}
+
+.container li {
+    list-style: none;
+    border-top: 2px solid transparent;
+    padding-top: 0.6rem;
+}
+
+.container li:hover {
+    border-top-color: #73ff00;
+    cursor: pointer;
+}

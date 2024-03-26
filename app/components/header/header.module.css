@@ -1,0 +1,11 @@
+.container {
+    /* background-color: rgba(5, 22, 18, 0.9); */
+    left: 0;
+    max-height: 96px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+}

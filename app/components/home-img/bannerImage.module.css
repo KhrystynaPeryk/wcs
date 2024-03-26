@@ -1,0 +1,13 @@
+.img {
+    height: 100vh;
+    left: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 0;
+}
+
+/* .bannerContainer {
+  z-index: -1;
+} */

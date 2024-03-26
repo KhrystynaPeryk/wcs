@@ -1,0 +1,25 @@
+.heroContainer {
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.solutions {
+    font-weight: bold;
+}
+
+.needs {
+    font-weight: 300;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #bb00ff, #73ff00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
