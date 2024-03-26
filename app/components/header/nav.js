@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './nav.module.css'
 
-const Nav = () => {
+const Nav = ({expanded}) => {
+
   return (
-    <ul className={styles.container}>
+    <ul className={expanded ? styles.navContainerExpanded : styles.container}>
       <li>
         Services
       </li>
