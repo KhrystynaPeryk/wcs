@@ -1,5 +1,6 @@
 .icons, .logo {
     display: inline-block;
+    margin-right: 1rem;
 }
 
 .icons:hover {
@@ -8,6 +9,7 @@
 
 .burgerMenu {
     display: none;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

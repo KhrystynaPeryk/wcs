@@ -10,7 +10,7 @@
     width: 180px;
     z-index: 2;
     color: white;
-    font-size: small;
+    font-size: large;
 }
 
 @keyframes bounce {
