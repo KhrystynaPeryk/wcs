@@ -9,9 +9,8 @@ export default function Home() {
       <Header />
       <section className={styles.container}>
         <Banner />
-        <p>&nbsp;</p>
       </section>
-      <section>
+      <section className={styles.container}>
         <Service />
       </section>
     </>
