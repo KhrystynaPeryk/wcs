@@ -1,0 +1,42 @@
+.item {
+    border-top: 2px solid white;
+    width: 20em;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .item {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 870px) {
+    .item {
+        padding: 0;
+    }
+}
+
+@media (max-width: 470px) {
+    .item {
+        width: 15em;
+    }
+    .item h2 {
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+}
+
+.item div {
+    font-size: large;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .item div {
+        display: none;
+    }
+}
+
+

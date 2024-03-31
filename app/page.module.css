@@ -1,7 +1,10 @@
-.container {
+/* .pageContainer {
+  background-color: black;
+} */
+
+.bannerContainer {
   display: flex;
   align-items: center;
-  /* color: #fff; */
   height: 100vh;
   overflow: hidden;
   position: relative;

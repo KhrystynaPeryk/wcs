@@ -5,14 +5,14 @@ import Service from "./components/service-section/service";
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.pageContainer}>
       <Header />
-      <section className={styles.container}>
+      <section className={styles.bannerContainer}>
         <Banner />
       </section>
-      <section className={styles.container}>
+      <section className={styles.servicesContainer}>
         <Service />
       </section>
-    </>
+    </div>
   );
 }
