@@ -1,10 +1,17 @@
+'use client'
 import React from 'react'
 import styles from './down-errow.module.css'
 
 export const DownArrow = () => {
+    const scrollToServices = () => {
+        window.scrollBy({
+            top: window.innerHeight * 1.1,
+            behavior: 'smooth'
+        });
+    };
     return (
         <div className={styles.arrContainer}>
-            <p>LEARN MORE</p>
+            <p onClick={scrollToServices}>LEARN MORE</p>
         </div>
     )
 }
