@@ -4,7 +4,7 @@ import styles from './down-errow.module.css'
 
 export const DownArrow = () => {
     const scrollToServices = () => {
-        window.scrollBy({
+        window.scrollTo({
             top: window.innerHeight * 1.1,
             behavior: 'smooth'
         });

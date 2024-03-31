@@ -2,6 +2,19 @@
     height: 100vh;
     position: relative;
 }
+
+/* -------- adjusting view depending on a height ------ */
+/* @media (max-height: 760px) { */
+    /* .serviceContainer, .img {
+        height: 200vh;
+        color: orange;
+    } */
+    /* .servicesDesc {
+        top: -10%;
+    }
+} */
+/* ---------- */
+
 .img {
     width: 100%;
     height: 100vh;
@@ -30,19 +43,6 @@
     display: flex;
 }
 
-@media (max-width: 1200px) {
-    .servicesDesc {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 470px) {
-    .servicesDesc {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
 .servicesDesc p {
     font-size: 60px;
     font-weight: bold;
@@ -53,7 +53,15 @@
     width: 40rem;
 }
 
+.itemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 1200px) {
+    .servicesDesc {
+        flex-direction: column;
+    }
     .servicesDesc p {
         font-size: 30px;
     }
@@ -65,7 +73,9 @@
     }
 }
 
-.itemsContainer {
-    display: flex;
-    flex-wrap: wrap;
+@media (max-width: 470px) {
+    .servicesDesc {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
