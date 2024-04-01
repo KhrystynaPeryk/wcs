@@ -9,6 +9,12 @@ const Nav = ({expanded}) => {
         Services
       </li>
       <li>
+        Blog
+      </li>
+      <li>
+        About
+      </li>
+      <li>
         Contact us
       </li>
     </ul>

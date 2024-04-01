@@ -1,28 +1,18 @@
 .serviceContainer {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
-/* -------- adjusting view depending on a height ------ */
-/* @media (max-height: 760px) { */
-    /* .serviceContainer, .img {
-        height: 200vh;
-        color: orange;
-    } */
-    /* .servicesDesc {
-        top: -10%;
-    }
-} */
-/* ---------- */
-
-.img {
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    object-fit: cover;
+.serviceContainer::before {
+    content: "";
     position: absolute;
-    z-index: 0;
-    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../../public/assets/img/servicesImg.jpg');
+    background-size: cover;
+    z-index: -1;
 }
 
 .transitional {
@@ -37,7 +27,6 @@
     left: 0;
     top: 20%;
     color: white;
-    z-index: 1;
     padding-left: 3rem;
     padding-right: 3rem;
     display: flex;
@@ -57,7 +46,7 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+/* //adjusting width */
 @media (max-width: 1200px) {
     .servicesDesc {
         flex-direction: column;
@@ -67,15 +56,34 @@
     }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 875px) {
     .servicesDesc p {
-        width: 20rem;
+        width: 100%;
+    }
+    .itemsContainer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .servicesDesc {
+        right: 3%;
     }
 }
+/* // adjusting height */
+@media (max-height: 640px) {
+    .serviceContainer {
+        height: 150vh;
+    }
+    .servicesDesc p {
+        margin: 0;
+    }
+    
+}
 
-@media (max-width: 470px) {
+@media (max-height: 875px) {
     .servicesDesc {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        top: 10%;
     }
 }

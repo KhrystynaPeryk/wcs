@@ -1,9 +1,11 @@
 .item {
     border: 2px solid transparent;
     border-top: 2px solid white;
-    width: 20em;
+    width: 20rem;
     padding: 2rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes borderColorRotate {
@@ -17,9 +19,15 @@
     border-radius: 2px;
     background-color: rgba(250, 250, 250, 0.1);
     transition: background-color 1s;
-    animation: borderColorRotate 2s infinite linear; /* Adjust duration as needed */
+    cursor: pointer;
+    animation: borderColorRotate 2s infinite linear;
 }
 
+.item div {
+    font-size: large;
+    /* display: block; */
+}
+/* //adjusting width */
 @media (max-width: 1200px) {
     .item {
         padding: 1rem;
@@ -27,9 +35,14 @@
     }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 875px) {
     .item {
         padding: 0;
+        margin: 1rem;
+        width: 100%;
+    }
+    .item div {
+        display: none;
     }
 }
 
@@ -42,16 +55,24 @@
         font-size: 20px;
     }
 }
-
-.item div {
-    font-size: large;
-    /* display: block; */
+/* // adjusting height */
+@media (max-height: 640px) {
+    .servicesDesc {
+        top: 0%;
+    }
 }
 
-/* @media (max-width: 800px) {
-    .item div {
-        display: none;
+@media (max-height: 875px) {
+    .servicesDesc {
+        top: 10%;
     }
-} */
-
-
+    .item {
+        padding: 0;
+    }
+    .item h2 {
+        font-size: 17px;
+    }
+    .item div {
+        font-size: 16px;
+    }
+}

@@ -8,7 +8,7 @@ const Service = () => {
   return (
     <div className={styles.serviceContainer}>
       <div className={styles.transitional}></div>
-      <Image src={servicesImg} alt='img' className={styles.img}/>
+      {/* <Image src={servicesImg} alt='img' className={styles.img}/> */}
       <div className={styles.servicesDesc}>
         <p>Our services</p>
         <div className={styles.itemsContainer}>
