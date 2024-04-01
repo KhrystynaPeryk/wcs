@@ -16,6 +16,12 @@
     }
 }
 
+@media (max-height: 460px) {
+    .heroContainer {
+        font-size: 35px;
+    }
+}
+
 .solutions {
     font-weight: bold;
 }
