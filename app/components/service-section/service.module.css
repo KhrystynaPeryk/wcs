@@ -87,3 +87,9 @@
         top: 10%;
     }
 }
+
+@media (max-height: 400px) {
+    .servicesDesc {
+        top: 1%;
+    }
+}

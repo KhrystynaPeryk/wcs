@@ -1,0 +1,7 @@
+.aboutContainer {
+    height: 100vh;
+    position: relative;
+    color: white;
+    background-color: rgb(124, 124, 124);
+    z-index: -1;
+}

@@ -1,0 +1,7 @@
+.blogContainer {
+    height: 100vh;
+    position: relative;
+    color: white;
+    background-color: rgb(92, 91, 91);
+    z-index: -1;
+}
