@@ -1,0 +1,30 @@
+.img {
+    transform: rotate(-90deg);
+}
+
+.arrows {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.arrows .img {
+    transition: transform 0.5s ease;
+    transform: rotate(-90deg);
+}
+
+.arrows .img:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.arrows .img:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.arrows .img:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.arrows:hover img {
+    transform: translateX(10px) rotate(-90deg);
+    filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(4390%) hue-rotate(244deg) brightness(102%) contrast(101%);
+}

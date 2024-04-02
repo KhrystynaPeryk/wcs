@@ -1,0 +1,27 @@
+.blogItemContainer {
+    padding: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 600px;
+}
+
+.blogItemContainer h2 {
+    height: 5rem;
+}
+
+.link {
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+    color: #bb00ff;
+}
+
+.link span {
+    margin-right: 0.5rem;
+    font-size: large;
+    font-weight: bold;
+}

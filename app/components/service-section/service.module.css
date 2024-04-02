@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../../../public/assets/img/servicesImg.jpg');
+    background-image: url('../../../public/assets/img/servicesImg.png');
     background-size: cover;
     z-index: -1;
 }
