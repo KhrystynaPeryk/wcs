@@ -32,13 +32,17 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
+    font-size: 30px;
+    height: 7rem;
+}
+
+.item h2 span {
     background: linear-gradient(90deg, #bb00ff, #73ff00);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 30px;
-    height: 7rem;
 }
+
 .item h2:after {
     background: url('../../../public/assets/icons/down-arrow.svg');
     background-repeat: no-repeat;

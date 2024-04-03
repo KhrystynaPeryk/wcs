@@ -17,7 +17,7 @@ const ServiceItem = ({ serviceName, serviceDesc, toggleVisibility, isVisible }) 
 
     return (
         <div className={styles.item} onClick={handleClick}>
-            <h2>{serviceName}</h2>
+            <h2><span>{serviceName}</span></h2>
             <div className={isVisible ? styles.visible : styles.hidden}>
                 {serviceDesc}
                 <Link href='/services/design' onClick={handleImageClick}>
