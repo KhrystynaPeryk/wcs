@@ -3,5 +3,41 @@
     position: relative;
     color: white;
     background-color: rgb(124, 124, 124);
+    z-index: 1;
+    display: flex;
+    padding: 5rem;
+}
+
+.aboutContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../../public/assets/img/blog-bg.png');
+    background-size: cover;
     z-index: -1;
+}
+
+.imgWrapper {
+    position: relative;
+    flex: 1;
+}
+
+.textWrapper {
+    flex: 1;
+    padding: 5rem;
+}
+.textWrapper h1 {
+    font-size: 60px;
+    background: linear-gradient(30deg, #bb00ff, #73ff00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.text {
+    font-size: 30px;
 }
