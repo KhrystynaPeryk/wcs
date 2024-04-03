@@ -9,7 +9,7 @@ const BlogItem = ({image, title, path}) => {
         <Link href={path} className={styles.link}>
             <div className={styles.blogItemContainer}>
                 <div className={styles.imgWrapper}>
-                    <Image src={image} alt={title} width={600} height={400} className={styles.img}/>
+                    <Image src={image} alt={title} width={600} height={400} className={styles.img} layout='responsive'/>
                 </div>
                 <h2>{title}</h2>
                 <div className={styles.readMore}>
