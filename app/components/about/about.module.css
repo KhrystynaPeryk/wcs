@@ -1,8 +1,6 @@
 .aboutContainer {
-    height: 100vh;
     position: relative;
     color: white;
-    background-color: rgb(124, 124, 124);
     z-index: 1;
     display: flex;
     padding: 5rem;
@@ -15,7 +13,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../../../public/assets/img/blog-bg.png');
+    background-image: url('../../../public/assets/img/servicesImg.png');
     background-size: cover;
     z-index: -1;
 }
@@ -23,6 +21,7 @@
 .imgWrapper {
     position: relative;
     flex: 1;
+    /* width: 735px; */
 }
 
 .textWrapper {
@@ -39,5 +38,10 @@
 }
 
 .text {
-    font-size: 30px;
+    font-size: 25px;
 }
+
+/* .text span {
+    color: #bb00ff;
+    font-weight: bold;
+} */

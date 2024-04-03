@@ -18,7 +18,7 @@ const About = () => {
                         <b>Web Craft Squad</b> is a start up company of enthusiastic IT specialists who specialize in providing end-to-end solutions for your web application needs. 
                     </p>
                     <p>
-                        Our commitment to 'Comprehensive Web Application Development and Support' means that we're here to guide you through every step of your project's journey.
+                        Our commitment to <span>"Comprehensive Web Application Development and Support"</span> means that we're here to guide you through every step of your project's journey.
                     </p>
                     <p>
                         From conceptualization to deployment and beyond, our team of experts is dedicated to crafting web applications that not only meet your unique requirements but also exceed your expectations.
