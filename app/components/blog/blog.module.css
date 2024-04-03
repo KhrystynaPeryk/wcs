@@ -1,7 +1,7 @@
 .blogContainer {
     /* height: 100vh; */
     position: relative;
-    color: white;
+    color: #ddd6cb;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,13 +37,4 @@
         justify-content: center;
         align-items: center;
     }
-
-    /* .itemsWrapper > a:last-child {
-        color: red;
-        flex: 2
-    }
-
-    .itemsWrapper > a:last-child img {
-        width: 100%;
-    } */
 }

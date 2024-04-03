@@ -8,7 +8,7 @@ const Footer = () => {
             <div>
                 Transform <b>your vision</b> into a dynamic and effective online presence with us!
             </div>
-            <WCSLogo color='white' />
+            <WCSLogo color='#ddd6cb' />
         </div>
     )
 }

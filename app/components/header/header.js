@@ -41,7 +41,7 @@ const Header = () => {
   return (
       // <div className={menuExpanded ? `${styles.container} ${styles.black}` : styles.container}>
       <div className={`${styles.container} ${menuExpanded ? styles.black : ''} ${isScrolled ? styles.black : ''}`}>
-        <Logo color={'#fff'} onMenuToggle={handleMenuToggle}/>
+        <Logo color={'#ddd6cb'} onMenuToggle={handleMenuToggle}/>
         <Nav expanded={menuExpanded} />
       </div>
   )

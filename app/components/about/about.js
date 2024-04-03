@@ -11,7 +11,7 @@ const About = () => {
             </div>
             <div className={styles.textWrapper} >
                 <div>
-                    <h1>About us</h1>
+                    <h1>About Us</h1>
                 </div>
                 <div className={styles.text}>
                     <p>

@@ -1,6 +1,6 @@
 .aboutContainer {
     position: relative;
-    color: white;
+    color: #ddd6cb;
     z-index: 1;
     display: flex;
     padding: 5rem;
@@ -82,7 +82,7 @@
         width: 300px;
     }
     .textWrapper h1 {
-        font-size: 40px;;
+        font-size: 40px;
     }
     .textWrapper {
         padding: 0;

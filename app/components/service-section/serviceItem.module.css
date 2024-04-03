@@ -1,6 +1,6 @@
 .item {
     border: 2px solid transparent;
-    border-top: 2px solid white;
+    border-top: 2px solid #ddd6cb;
     width: 20rem;
     padding: 2rem;
     margin: 1rem;
@@ -15,7 +15,7 @@
 }
 
 .item:hover {
-    border: 2px solid white;
+    border: 2px solid #ddd6cb;
     border-radius: 2px;
     background-color: rgba(250, 250, 250, 0.1);
     transition: background-color 1s;

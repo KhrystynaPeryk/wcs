@@ -1,15 +1,14 @@
 .footerContainer {
-    border-top: 1px solid white;
+    border-top: 1px solid #ddd6cb;
     position: relative;
-    color: white;
+    color: #ddd6cb;
     background-color: #0F1012;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 20px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
 
 .footerContainer b {

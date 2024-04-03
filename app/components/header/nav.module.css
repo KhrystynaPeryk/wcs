@@ -28,6 +28,7 @@
     list-style: none;
     border-top: 2px solid transparent;
     padding-top: 0.6rem;
+    color: #ddd6cb;
 }
 
 .container li:hover {

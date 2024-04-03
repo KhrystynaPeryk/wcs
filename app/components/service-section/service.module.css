@@ -1,6 +1,6 @@
 .serviceContainer {
     position: relative;
-    color: white;
+    color: #ddd6cb;
     background-color: rgb(92, 91, 91);
     display: flex;
     flex-direction: column;

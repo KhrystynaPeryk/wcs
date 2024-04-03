@@ -15,7 +15,7 @@ const Service = () => {
     <div className={styles.serviceContainer}>
       <div className={styles.transitional}></div>
       <div className={styles.servicesDesc}>
-        <p>Our services</p>
+        <p>Our Services</p>
         <div className={styles.itemsContainer}>
           <ServiceItem serviceName={'Design'} serviceDesc={'Responsive custom design for desktop, tablet and mobile devices.'} toggleVisibility={toggleVisibility} isVisible={visibleItem === 'Design'} />
           <ServiceItem serviceName={'Front-end Development'} serviceDesc={'We develop UI of your website or web application as per design approved by you.'} toggleVisibility={toggleVisibility} isVisible={visibleItem === 'Front-end Development'} />
