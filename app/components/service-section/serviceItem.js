@@ -6,7 +6,7 @@ import TrippleArrows from './trippleArrows';
 
 const ServiceItem = ({ serviceName, serviceDesc, toggleVisibility, isVisible }) => {
     const handleClick = () => {
-        if (window.innerWidth <= 875) {
+        if (window.innerWidth <= 935) {
             toggleVisibility(serviceName);
         }
     };

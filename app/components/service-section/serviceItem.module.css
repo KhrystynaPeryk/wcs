@@ -24,7 +24,7 @@
 } */
 
 .item div {
-    font-size: large;
+    font-size: 22px;
     display: block;
 }
 
@@ -32,6 +32,12 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
+    background: linear-gradient(90deg, #bb00ff, #73ff00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    height: 7rem;
 }
 .item h2:after {
     background: url('../../../public/assets/icons/down-arrow.svg');
@@ -52,15 +58,7 @@
     display: none;
 }
 
-/* //adjusting width */
-@media (max-width: 1200px) {
-    .item {
-        padding: 1rem;
-        margin: 1rem;
-    }
-}
-
-@media (max-width: 875px) {
+@media (max-width: 935px) {
     .item {
         padding: 0;
         margin: 1rem;
@@ -69,38 +67,10 @@
     .item div {
         display: none;
     }
-    .item h2:after {
-        display: inline-block;
-    }
-}
-
-@media (max-width: 470px) {
-    .item {
-        width: 15em;
-    }
     .item h2 {
         margin-bottom: 0;
-        font-size: 20px;
     }
-}
-/* // adjusting height */
-@media (max-height: 640px) {
-    .servicesDesc {
-        top: 0%;
-    }
-}
-
-@media (max-height: 875px) {
-    .servicesDesc {
-        top: 10%;
-    }
-    .item {
-        padding: 0;
-    }
-    .item h2 {
-        font-size: 17px;
-    }
-    .item div {
-        font-size: 16px;
+    .item h2:after {
+        display: inline-block;
     }
 }

@@ -1,6 +1,13 @@
 .serviceContainer {
-    min-height: 100vh;
     position: relative;
+    color: white;
+    background-color: rgb(92, 91, 91);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding-bottom: 3rem;
 }
 
 .serviceContainer::before {
@@ -18,15 +25,12 @@
 .transitional {
     height: 5rem;
     width: 100%;
+    margin-bottom: 3rem;
     background: rgb(0,5,3);
     background: linear-gradient(180deg, rgba(0,5,3,1) 34%, rgba(15,15,17,1) 68%);
 }
 
 .servicesDesc {
-    position: absolute;
-    left: 0;
-    top: 20%;
-    color: white;
     padding-left: 3rem;
     padding-right: 3rem;
     display: flex;
@@ -46,50 +50,29 @@
     display: flex;
     flex-wrap: wrap;
 }
-/* //adjusting width */
+
 @media (max-width: 1200px) {
     .servicesDesc {
         flex-direction: column;
-    }
-    .servicesDesc p {
-        font-size: 30px;
     }
 }
 
 @media (max-width: 875px) {
     .servicesDesc p {
-        width: 100%;
-    }
-    .itemsContainer {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .servicesDesc {
-        right: 3%;
+        width: 30rem;
     }
 }
-/* // adjusting height */
-@media (max-height: 640px) {
-    .serviceContainer {
-        height: 150vh;
-    }
+
+@media (max-width: 600px) {
     .servicesDesc p {
-        margin: 0;
-    }
-    
-}
-
-@media (max-height: 875px) {
-    .servicesDesc {
-        top: 10%;
+        font-size: 40px;
+        text-align: center;
+        width: 20rem;
     }
 }
 
-@media (max-height: 400px) {
-    .servicesDesc {
-        top: 1%;
+@media (max-width: 500px) {
+    .servicesDesc p {
+        width: 15rem;
     }
 }
