@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div className={styles.aboutContainer}>
             <div className={styles.imgWrapper} >
-                <Image src={Team} alt='about us' fill className={styles.img} />
+                <Image src={Team} alt='about us' width={700} height='auto' className={styles.img} />
             </div>
             <div className={styles.textWrapper} >
                 <div>
