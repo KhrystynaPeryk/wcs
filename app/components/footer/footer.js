@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './footer.module.css'
-import Logo from '../header/logo'
+import { WCSLogo } from '../header/WCSLogo'
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
             <div>
                 Transform <b>your vision</b> into a dynamic and effective online presence with us!
             </div>
-            <Logo color={'#fff'}/>
+            <WCSLogo color='white' />
         </div>
     )
 }
