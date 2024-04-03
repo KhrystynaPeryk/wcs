@@ -1,0 +1,20 @@
+.footerContainer {
+    border-top: 1px solid white;
+    position: relative;
+    color: white;
+    background-color: #0F1012;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footerContainer b {
+    background: linear-gradient(30deg, #bb00ff, #73ff00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
