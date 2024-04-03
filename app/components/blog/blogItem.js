@@ -6,14 +6,18 @@ import Link from 'next/link'
 
 const BlogItem = ({image, title, path}) => {
     return (
-        <div className={styles.blogItemContainer}>
-            <Image src={image} alt={title} width={600} height={400} className={styles.img}/>
-            <h2>{title}</h2>
-            <Link href={path} className={styles.link}>
-                <span>READ MORE</span>
-                <TrippleArrows />           
-            </Link>
-        </div>
+        <Link href={path} className={styles.link}>
+            <div className={styles.blogItemContainer}>
+                <div className={styles.imgWrapper}>
+                    <Image src={image} alt={title} width={600} height={400} className={styles.img}/>
+                </div>
+                <h2>{title}</h2>
+                <div className={styles.readMore}>
+                    <span>READ MORE</span>
+                    <TrippleArrows />           
+                </div>
+            </div>
+        </Link>
     )
 }
 
