@@ -1,0 +1,63 @@
+.serviceLibraryContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #0F1012;
+    color: white;
+}
+
+.contentWrapper, .imgWrapper {
+    padding: 4rem;
+    position: relative;
+    flex: 1;
+    height: 70vh;
+    max-width: 900px;
+}
+.contentWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contentWrapper span {
+    background: linear-gradient(90deg, #bb00ff, #73ff00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+.text {
+    font-size: 20px;
+}
+.actions {
+    margin-top: 3rem;
+}
+
+.actions button {
+    border: 0;
+    padding: 0.75rem 5rem;
+    background: linear-gradient(30deg, #bb00ff, #73ff00);
+    border: none;
+    color: #ddd6cb;
+    border-radius: 2px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.actions button:hover,
+.actions button:focus {
+    background: linear-gradient(30deg, #bb00ff, #73ff00);
+}
+
+.imgWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

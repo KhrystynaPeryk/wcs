@@ -4,7 +4,7 @@ import styles from './serviceItem.module.css';
 import Link from 'next/link';
 import TrippleArrows from './trippleArrows';
 
-const ServiceItem = ({ serviceName, serviceDesc, toggleVisibility, isVisible }) => {
+const ServiceItem = ({ serviceName, serviceDesc, path, toggleVisibility, isVisible }) => {
     const handleClick = () => {
         if (window.innerWidth <= 935) {
             toggleVisibility(serviceName);
@@ -20,7 +20,7 @@ const ServiceItem = ({ serviceName, serviceDesc, toggleVisibility, isVisible }) 
             <h2><span>{serviceName}</span></h2>
             <div className={isVisible ? styles.visible : styles.hidden}>
                 {serviceDesc}
-                <Link href='/services/design' onClick={handleImageClick}>
+                <Link href={'/services' + path} onClick={handleImageClick}>
                     <TrippleArrows />
                 </Link>
             </div>
