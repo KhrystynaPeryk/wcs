@@ -7,7 +7,7 @@ import Blog3Img from '../../../public/assets/img/blog/blog3.jpg'
 
 const Blog = () => {
     return (
-        <div className={styles.blogContainer}>
+        <div className={styles.blogContainer} id='blog'>
             <h1>Blog</h1>
             <div className={styles.itemsWrapper}>
                 <BlogItem image={Blog1Img} title={'Embarking on the Cloud Journey: a Comprehensive Guide to Getting Started'} path={'/blog/embarking-on-the-cloud-journey-a-comprehensive-guide-to-getting-started'} />

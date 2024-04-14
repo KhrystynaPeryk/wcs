@@ -60,7 +60,7 @@ const servicesLibrary = [
     },
     {
         id: 'cloud-consulting',
-        name: 'Cloud consulting',
+        name: 'Cloud Consulting',
         htmlDescription: `
             <div>
                 <p>Optimizing your website's performance is crucial in today's digital landscape. </p>

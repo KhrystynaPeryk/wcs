@@ -7,7 +7,7 @@ import FormSubmit from './formSubmit'
 const ContactUs = () => {
     // const [state, formAction] = useFormState(shareMeal, {message: null}) 
     return (
-        <div className={styles.contactContainer}>
+        <div className={styles.contactContainer} id='contact-us'>
             <header className={styles.header}>
                 <h1>Contact Us</h1>
                 <p>Submit your contact details and request so we can get in touch with you to discuss your needs.</p>

@@ -5,7 +5,7 @@ import Team from '../../../public/assets/img/about.png'
 
 const About = () => {
     return (
-        <div className={styles.aboutContainer}>
+        <div className={styles.aboutContainer} id='about-us'>
             <div className={styles.imgWrapper} >
                 <Image src={Team} alt='about us' width={700} height='auto' className={styles.img} />
             </div>

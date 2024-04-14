@@ -12,7 +12,7 @@ const Service = () => {
   };
 
   return (
-    <div className={styles.serviceContainer}>
+    <div className={styles.serviceContainer} id='our-services'>
       <div className={styles.transitional}></div>
       <div className={styles.servicesDesc}>
         <p>Our Services</p>
