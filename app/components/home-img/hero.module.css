@@ -10,15 +10,31 @@
     margin-left: 2rem;
 }
 
-@media (max-width: 900px) {
+.btnWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+ /* 578 X 815 */
+
+@media (max-width: 578px) {
     .heroContainer {
-        font-size: 40px;
+        font-size: 35px;
+        margin-left: 0.5rem;
+    }
+    .btnWrapper {
+        margin-top: 0;
     }
 }
 
-@media (max-height: 460px) {
+@media (max-height: 815px) {
     .heroContainer {
         font-size: 35px;
+        margin-left: 0.5rem;
+    }
+    .btnWrapper {
+        margin-top: 0;
     }
 }
 

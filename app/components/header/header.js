@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './header.module.css'
 import Logo from './logo'
 import Nav from './nav'
+import { useRouter } from 'next/navigation'
 
 const Header = () => {
   const [menuExpanded, setMenuExpanded] = useState(false);
@@ -38,10 +39,14 @@ const Header = () => {
     }
   }, [menuExpanded]); 
   
+  const router = useRouter()
+  const handleClick = () => {
+    router.push(`/`)
+  }
   return (
       // <div className={menuExpanded ? `${styles.container} ${styles.black}` : styles.container}>
       <div className={`${styles.container} ${menuExpanded ? styles.black : ''} ${isScrolled ? styles.black : ''}`}>
-        <Logo color={'#ddd6cb'} onMenuToggle={handleMenuToggle}/>
+        <Logo color={'#ddd6cb'} onMenuToggle={handleMenuToggle} onClick={handleClick}/>
         <Nav expanded={menuExpanded} />
       </div>
   )
