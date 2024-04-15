@@ -3,9 +3,10 @@ import {useFormState} from 'react-dom'
 import React from 'react'
 import styles from './contactUs.module.css'
 import FormSubmit from './formSubmit'
+import { insertContactDetail } from '@/db/mongodb'
 
 const ContactUs = () => {
-    // const [state, formAction] = useFormState(shareMeal, {message: null}) 
+    const [state, formAction] = useFormState(insertContactDetail, {message: null}) 
     return (
         <div className={styles.contactContainer} id='contact-us'>
             <header className={styles.header}>
@@ -15,7 +16,7 @@ const ContactUs = () => {
             <main className={styles.main}>
                 <form 
                     className={styles.form} 
-                    // action={formAction}
+                    action={formAction}
                 >
                     <p>
                         <label htmlFor="name">Your name</label>
@@ -34,7 +35,7 @@ const ContactUs = () => {
                         required
                         ></textarea>
                     </p>
-                    {/* {state.message && <p>{state.message}</p>} */}
+                    {state.message && <p>{state.message}</p>}
                     <p className={styles.actions}>
                         <FormSubmit />
                     </p>
