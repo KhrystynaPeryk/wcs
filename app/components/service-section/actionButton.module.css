@@ -13,9 +13,11 @@
     font: inherit;
     font-size: 1.25rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s, box-shadow 0.3s;
 }
 
 .actions button:hover,
 .actions button:focus {
-    background: linear-gradient(30deg, #bb00ff, #73ff00);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
 }
