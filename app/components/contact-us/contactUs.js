@@ -1,12 +1,25 @@
 'use client'
 import {useFormState} from 'react-dom'
-import React from 'react'
+import React, { useRef } from 'react'
 import styles from './contactUs.module.css'
 import FormSubmit from './formSubmit'
 import { insertContactDetail } from '@/db/mongodb'
 
 const ContactUs = () => {
-    const [state, formAction] = useFormState(insertContactDetail, {message: null}) 
+    const nameRef = useRef(null);
+    const emailRef = useRef(null);
+    const requestRef = useRef(null);
+    const [state, formAction] = useFormState(insertContactDetail, {message: null})
+    
+    const clearFormFields = () => {
+        if (nameRef.current) nameRef.current.value = '';
+        if (emailRef.current) emailRef.current.value = '';
+        if (requestRef.current) requestRef.current.value = '';
+    };
+
+    if (state.message === 'Submitted successfully!!!') {
+        clearFormFields();
+    }
     return (
         <div className={styles.contactContainer} id='contact-us'>
             <header className={styles.header}>
@@ -20,11 +33,11 @@ const ContactUs = () => {
                 >
                     <p>
                         <label htmlFor="name">Your name</label>
-                        <input type="text" id="name" name="name" required />
+                        <input type="text" id="name" name="name" required ref={nameRef}/>
                     </p>
                     <p>
                         <label htmlFor="email">Your email</label>
-                        <input type="email" id="email" name="email" required />
+                        <input type="email" id="email" name="email" required ref={emailRef} />
                     </p>
                     <p>
                         <label htmlFor="request">What can we help you with?</label>
@@ -33,6 +46,7 @@ const ContactUs = () => {
                         name="request"
                         rows="10"
                         required
+                        ref={requestRef}
                         ></textarea>
                     </p>
                     {state.message && <p>{state.message}</p>}
