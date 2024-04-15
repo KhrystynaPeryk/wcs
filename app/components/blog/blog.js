@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './blog.module.css'
 import BlogItem from './blogItem'
-import Blog1Img from '../../../public/assets/img/blog/blog1.jpg'
-import Blog2Img from '../../../public/assets/img/blog/blog2.jpg'
-import Blog3Img from '../../../public/assets/img/blog/blog3.jpg'
+import Blog1Img from '../../../public/assets/img/blog/Article1/blog1.jpg'
+import Blog2Img from '../../../public/assets/img/blog/Article2/blog2.jpg'
+import Blog3Img from '../../../public/assets/img/blog/Article3/blog3.jpg'
 
 const Blog = () => {
     return (

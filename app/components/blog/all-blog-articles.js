@@ -1,9 +1,11 @@
+import img1 from '../../../public/assets/img/blog/Article1/img1.png'
+import img2 from '../../../public/assets/img/blog/Article2/img2.png'
 const blogArticlesLibrary = [
     {
         id: 'embarking-on-the-cloud-journey-a-comprehensive-guide-to-getting-started',
         name: 'Embarking on the Cloud Journey: A Comprehensive Guide to Getting Started',
         htmlBody: `
-            <div className='article'>
+            <div>
                 <h3>Introduction</h3>
                 <p>In today's digital landscape, leveraging cloud computing has become a cornerstone for businesses looking to enhance agility, scalability, and overall operational efficiency. Starting a cloud journey can be transformative, but it requires careful planning and execution. This article provides a comprehensive guide on how to initiate and navigate the exciting process of moving your operations to the cloud.</p>
                 <h3>1. Define Your Objectives and Goals</h3>
@@ -20,8 +22,8 @@ const blogArticlesLibrary = [
                 <p>Selecting a reliable and compatible cloud service provider is a pivotal decision. Major players like Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) offer a wide range of services. Evaluate factors such as pricing, service offerings, support, and data center locations to make an informed choice.</p>
                 <h3>7. Migration Strategy</h3>
                 <p>Develop a comprehensive migration strategy that minimizes disruption to your operations. Consider a phased approach, migrating less critical workloads first to test and refine your processes. Leverage tools provided by your cloud service provider for a smooth transition.</p>
-                <div className='img-container'>
-                    <div className='img add-two '></div>
+                <div style="display: flex; justify-content: center;">
+                    <img src="/assets/img/blog/Article1/img1.png" alt='Cloud image' class='img' />
                 </div>
                 <h3>8. Training and Skill Development</h3>
                 <p>Invest in training your IT team to ensure they have the necessary skills to manage and optimize cloud resources. Cloud platforms offer extensive documentation and training resources, and many also provide certification programs for various roles.</p>
@@ -32,14 +34,13 @@ const blogArticlesLibrary = [
                 <h3>Conclusion</h3>
                 <p>Embarking on a cloud journey is a strategic decision that can revolutionize the way your organization operates. By carefully planning and executing each step, you'll be well-positioned to enjoy the benefits of increased flexibility, scalability, and efficiency that the cloud offers. Remember that a successful cloud transformation is an ongoing process, requiring continuous optimization, innovation, and adaptation to evolving business needs and technological advancements.</p>
             </div>
-        `,
-        images: []
+        `
     },
     {
         id: 'building-seamless-e-commerce-experiences-integrating-rest-apis-with-front-end-development',
         name: 'Building Seamless E-commerce Experiences: Integrating REST APIs with Front-End Development',
         htmlBody: `
-            <div className='article'>
+            <div>
                 <h3>Introduction</h3>
                 <p>In the ever-evolving landscape of e-commerce, creating a seamless and dynamic user experience is paramount. The integration of REST APIs (Representational State Transfer Application Programming Interfaces) with front-end development has become a game-changer, allowing businesses to deliver responsive, data-driven, and feature-rich online shopping platforms. This article explores the synergy between REST APIs and front-end development in the context of e-commerce, highlighting the benefits and best practices for achieving a robust and engaging online shopping experience.</p>
                 <h2>Understanding REST APIs in E-commerce</h2>
@@ -57,8 +58,8 @@ const blogArticlesLibrary = [
                 <p>Ensure a standardized format for data exchange between the server and the front-end. Consistency in data formatting simplifies the development process and reduces the likelihood of errors.</p>
                 <h3>2. Secure Authentication:</h3>
                 <p>Implement secure authentication mechanisms to protect sensitive user information and transactions. Utilize HTTPS and token-based authentication to enhance the security of data exchanged between the front-end and the server.</p>
-                <div className='img-container'>
-                    <div className='img add-three'></div>
+                <div style="display: flex; justify-content: center;">
+                    <img src="/assets/img/blog/Article2/img2.png" alt='API image' class='img' />
                 </div>
                 <h3>3. Optimizing API Calls:</h3>
                 <p>Efficiently manage API calls to minimize latency and improve performance. Techniques such as data caching, pagination, and lazy loading can be employed to optimize the retrieval of data from the server.</p>
@@ -72,14 +73,13 @@ const blogArticlesLibrary = [
                 <h2>Conclusion</h2>
                 <p>In the dynamic landscape of e-commerce, the synergy between REST APIs and front-end development is instrumental in creating modern, responsive, and feature-rich online shopping experiences. Businesses that prioritize this integration benefit from improved user engagement, scalability, and adaptability to market trends. As technology continues to advance, the collaboration between back-end and front-end development will remain pivotal in shaping the future of e-commerce. By embracing these best practices and leveraging the capabilities of RESTful APIs, e-commerce platforms can not only meet but exceed user expectations in the digital marketplace.</p>
             </div>
-        `,
-        images: []
+        `
     },
     {
         id: 'unleashing-the-power-of-reactjs-why-it-triumphs-over-wordpress-and-wix-for-website-development',
         name: 'Unleashing the Power of ReactJS: Why It Triumphs Over WordPress and Wix for Website Development?',
         htmlBody: `
-            <div className='article'>
+            <div>
                 <h3>Introduction</h3>
                 <p>In the dynamic realm of web development, choosing the right technology stack for your website is crucial. ReactJS, an open-source JavaScript library maintained by Facebook, has gained immense popularity for its efficiency and flexibility. In this article, we'll delve into why a website built on ReactJS surpasses the customization capabilities of platforms like WordPress and Wix.</p>
                 <h3>1. Performance</h3>
@@ -88,7 +88,7 @@ const blogArticlesLibrary = [
                 <p>ReactJS is ideal for building Single Page Applications (SPAs), where content is dynamically loaded without requiring a full page refresh. This contributes to a seamless and responsive user interface. WordPress and Wix, on the other hand, are more suited for traditional multi-page websites, and achieving the same level of interactivity as SPAs can be challenging.</p>
                 <h3>3. Flexibility and Customization</h3>
                 <p>ReactJS offers unparalleled flexibility and customization options for developers. The component-based architecture allows for modular development, making it easier to manage and scale projects. Each React component can be tailored to specific functionalities, leading to a more modular and maintainable codebase. In contrast, WordPress and Wix, while providing templates and themes, may limit the extent of customization, especially for those with unique design requirements.</p>
-                <p className='quote'>Each React component can be tailored to specific functionalities, leading to a more modular and maintainable codebase.</p>
+                <p style="border-left: 4px solid #73ff00; padding-left: 1rem; color: #73ff00; font-size: xxx-large;">Each React component can be tailored to specific functionalities, leading to a more modular and maintainable codebase.</p>           
                 <h3>4. Rich User Interfaces</h3>
                 <p>ReactJS empowers developers to create rich and dynamic user interfaces with ease. The virtual DOM enables the creation of complex UIs by efficiently updating only the necessary components. This is particularly beneficial for websites that require a sophisticated user experience, such as interactive dashboards or real-time data updates. Achieving comparable UI richness in WordPress and Wix might involve third-party plugins or integrations, potentially leading to compatibility issues.</p>
                 <h3>5. State Management</h3>
@@ -98,8 +98,7 @@ const blogArticlesLibrary = [
                 <h3>Conclusion</h3>
                 <p>While WordPress and Wix are excellent platforms for individuals or businesses seeking a quick and easy website setup, ReactJS stands out as a superior choice for those who prioritize performance, flexibility, and customization. React's component-based architecture, state management capabilities, and efficient rendering make it a formidable tool for building modern, interactive web applications. When the goal is to create a unique and highly customized website with optimal performance, ReactJS emerges as the preferred solution in the ever-evolving landscape of web development.</p>
             </div>
-        `,
-        images: []
+        `
     },
 ]
 
