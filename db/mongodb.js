@@ -39,16 +39,36 @@ export async function insertContactDetail(prevState, formData) {
     let client
     try {
         client = await connectDatabase()
-    } catch(e) {
-        return {message: 'Connection to DB failed'}
-    }
-
-    try {
         await insertDocument(client, 'contact-details', newContact)
-        client.close()
         return {message: 'Submitted successfully!!!'}
     } catch(e) {
-        client.close()
         return {message: 'Failed to submit :('}
+    } finally {
+        if (client) {
+            client.close();
+            console.log('Connection to DB closed');
+        }
     }
+}
+
+export async function getAllContactDetails() {
+    let client;
+    try {
+        client = await connectDatabase();
+        const db = client.db('wcs');
+        const cursor = db.collection('contact-details').find().sort({_id: -1});
+        const documents = await cursor.toArray();
+        return documents.map(doc => ({
+            ...doc,
+            _id: doc._id.toString(), 
+        }));
+    } catch (e) {
+        console.error('Error fetching documents:', e);
+    } finally {
+        if (client) {
+            client.close();
+            console.log('Connection to DB closed');
+        }
+    }
+    return [];
 }
